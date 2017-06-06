@@ -5,22 +5,80 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title: 'Article One | Adarsh Namboothiri',
-    heading: '<h2>Article One</h2>',
-    date: 'June 6 2016',
-    reporter: '<h4>Adarsh Namboothiri</h4>',
-    content:`<p>
-                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
-                </p>
+var articles = {
+                articleOne = {
+                    title: 'Article One | Adarsh Namboothiri',
+                    heading: '<h2>Article One</h2>',
+                    date: 'June 6 2016',
+                    reporter: '<h4>Adarsh Namboothiri</h4>',
+                    content:`<p>
+                                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                                </p>
+                                <p>
+                                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                                </p>
+                                <p>
+                                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                                </p> `
+                },
+                articleTwo = {<html>
+    <head>
+        <title>
+            Article Two | Adarsh Namboothiri
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <a href="/">Home</a>
+            <hr/>
+            <h2>Article Two</h2>
+            <div>
+                June 6 2016
+            </div>
+            <div>
+                <h4>Adarsh Namboothiri</h4>
+            </div>
+            <div>
                 <p>
-                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                   This is my first attempt to create a webpage.And this is article number two.
                 </p>
+            </div>
+        </div>
+    </body>
+</html>
+},
+                articleThree = {<html>
+    <head>
+        <title>
+            Article Three | Adarsh Namboothiri
+        </title>
+           <meta name="viewport" content="width=device-width, initial-scale=1" />
+           <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <a href="/">Home</a>
+            <hr/>
+            <h2>Article Three</h2>
+            <div>
+                June 6 2016
+            </div>
+            <div>
+                <h4>Adarsh Namboothiri</h4>
+            </div>
+            <div>
                 <p>
-                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
-                </p> `
+                   This is my first attempt to create a webpage.And this is article number three.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
 }
-;
+};
+                
 
 function createTemplate(data) {
     var title = data.title;
