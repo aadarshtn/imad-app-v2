@@ -9,6 +9,7 @@ var articleOne = {
     title: 'Article One | Adarsh Namboothiri',
     heading: 'Article One',
     date: 'June 6 2016',
+    reporter: 'Adarsh Namboothiri',
     cotent:`<p>
                     This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
                 </p>
@@ -21,9 +22,35 @@ var articleOne = {
 }
 ;
 
-
-
-
+var htmltemplate = 
+`<html>
+    <head>
+        <title>
+            Article One | Adarsh Namboothiri
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="container">
+        <div>
+            <a href="/">Home</a>
+            <hr/>
+            ${heading}
+            <div>
+               ${date}
+            </div>
+             <div>
+               ${reporter}
+             </div>
+              <div>
+              ${content}
+              </div>
+          </div>
+      </div>
+    </body>
+</html>`
+;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
