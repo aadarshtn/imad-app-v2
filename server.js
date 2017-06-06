@@ -10,7 +10,7 @@ var articleOne = {
     heading: 'Article One',
     date: 'June 6 2016',
     reporter: 'Adarsh Namboothiri',
-    cotent:`<p>
+    content:`<p>
                     This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
                 </p>
                 <p>
@@ -18,7 +18,7 @@ var articleOne = {
                 </p>
                 <p>
                     This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
-                </p>`
+                </p> `
 }
 ;
 
