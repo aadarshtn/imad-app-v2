@@ -5,6 +5,25 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content = {
+    title: 'Article One | Adarsh Namboothiri',
+    heading: 'Article One',
+    date: 'June 6 2016',
+    cotent:`<p>
+                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                </p>
+                <p>
+                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                </p>
+                <p>
+                    This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
+                </p>`
+}
+;
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
