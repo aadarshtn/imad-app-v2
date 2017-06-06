@@ -6,6 +6,7 @@ element.innerHTML = ('New Value');
 console.log('Work Doe');
 
 var img = document.getElementById('madi');
+var marginLeft = 0;
 function moveRight() {
     marginLeft = 'marginLeft' + 10;
     img.style.marginLeft = 'marginLeft' + 'px';
