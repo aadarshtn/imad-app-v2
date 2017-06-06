@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-                articleOne: {
+                'article-one': {
                     title: 'Article One | Adarsh Namboothiri',
                     heading: '<h2>Article One</h2>',
                     date: 'June 6 2016',
@@ -21,7 +21,7 @@ var articles = {
                                     This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
                                 </p> `
                 },
-                articleTwo: { title: 'Article Two | Adarsh Namboothiri',
+                'article-two': { title: 'Article Two | Adarsh Namboothiri',
                     heading: '<h2>Article Two</h2>',
                     date: 'June 13 2016',
                     reporter: '<h4>Adarsh Namboothiri</h4>',
@@ -34,7 +34,7 @@ var articles = {
                                 <p>
                                     This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
                                 </p> `},
-                articleThree: { title: 'Article Three | Adarsh Namboothiri',
+                'article-three': { title: 'Article Three | Adarsh Namboothiri',
                     heading: '<h2>Article Three</h2>',
                     date: 'June 20 2016',
                     reporter: '<h4>Adarsh Namboothiri</h4>',
