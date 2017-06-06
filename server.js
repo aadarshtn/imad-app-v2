@@ -7,9 +7,9 @@ app.use(morgan('combined'));
 
 var articleOne = {
     title: 'Article One | Adarsh Namboothiri',
-    heading: 'Article One',
+    heading: '<h2>Article One</h2>',
     date: 'June 6 2016',
-    reporter: 'Adarsh Namboothiri',
+    reporter: '<h4>Adarsh Namboothiri</h4>',
     content:`<p>
                     This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.This is my first attempt to create a webpage.
                 </p>
