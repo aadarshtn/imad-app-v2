@@ -7,8 +7,8 @@ console.log('Work Doe');
 
 var img = document.getElementById('madi');
 function moveRight() {
-    marginLeft = marginLeft + 10;
-    img.style.marginLeft = marginLeft + 'px';
+    marginLeft = 'marginLeft' + 10;
+    img.style.marginLeft = 'marginLeft' + 'px';
 }
 img.onclick = function()
 {
