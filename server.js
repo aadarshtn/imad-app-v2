@@ -24,10 +24,10 @@ var articleOne = {
 
 var htmltemplate = 
 `<html>
-    <head>
-        <title>
-            Article One | Adarsh Namboothiri
-        </title>
+  <head>
+   <title>
+    ${title}
+   </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
