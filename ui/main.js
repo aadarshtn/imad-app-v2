@@ -8,5 +8,5 @@ console.log('Work Doe');
 var img = document.getElementById('madi');
 img.onclick = function()
 {
-  img.style.marginLeft ="1000px";  
+  img.style.marginLeft ="100px";  
 };
