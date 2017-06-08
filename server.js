@@ -1,6 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var counter= 0;
 
 var app = express();
 app.use(morgan('combined'));
@@ -108,8 +109,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-var counter= 0;
-app.get('/:counter', function( req, res) {
+app.get('/counter', function( req, res) {
     counter = counter +1;
     res.send(counter.toString());
 });
