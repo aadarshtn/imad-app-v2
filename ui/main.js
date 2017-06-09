@@ -26,7 +26,7 @@ button.onclick = function(){
     };
     
 //Create the request code
-request.open('http://aadarshtn.imad.hasura-app.io/counter', true);
+request.open('GET' , 'http://aadarshtn.imad.hasura-app.io/counter', true);
 request.send(null);
 
 };
